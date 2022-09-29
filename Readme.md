@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Петр Обинцев](https://up.htmlacademy.ru/htmlcss/35/user/2121259).
-* Наставник: `Неизвестно`.
+- Студент: [Петр Обинцев](https://up.htmlacademy.ru/htmlcss/35/user/2121259).
+- Наставник: `Татьяна Симоненко`(https://htmlacademy.ru/profile/tatien).
 
 ---
 
