@@ -1,0 +1,305 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+.main-header {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.navigation-link {
+  font-family: "PT Sans", sans-serif;
+  line-height: 24px;
+  color: #000000;
+  background-color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navigation-link-button {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  padding: 8px 50px;
+  background: #756157;
+  border-radius: 4px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.main-index {
+  color: #333333;
+  background-color: #ffffff;
+  background-image: url("../images/background-welcome-rocks.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.description h3 {
+  font-size: 24px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.description p {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.description-item {
+  color: #000000;
+  background-color: #82b3d3;
+}
+
+.description-wrapper {
+  color: #ffffff;
+}
+
+.description-item-square {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.description-item-road {
+  background: rgba(131, 179, 211, 0.2);
+}
+
+.description-item-tourists {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.description-item-bridge {
+  color: #ffffff;
+}
+
+.privilege-item-home {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.privilege-item-food {
+  background: #ffffff;
+}
+
+.privilege-item-souvenirs {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.search {
+  text-align: center;
+  width: 1200px;
+  height: 406px;
+}
+
+.search h2 {
+  color: #000000;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.search p {
+  color: #333333;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.search-catalog {
+  color: #ffffff;
+  background-color: #756157;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 8px 50px;
+}
+
+.hero {
+  text-align: center;
+}
+
+.about {
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.about h2 {
+  color: #000000;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.about p {
+  color: #333333;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.subscription {
+  color: #ffffff;
+  background-color: black;
+  background-image: url("../images/background-subscribe.jpg");
+  text-align: center;
+  background-size: 100% auto;
+  padding: 96px 258px 104px;
+}
+
+.subscription h2 {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.subscription p {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.main-footer a {
+  font-family: "PT Sans", sans-serif;
+  color: #000000;
+  background-color: #ffffff;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.footer-contacts-address {
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.main-inner-filter {
+  color: #ffffff;
+  background-color: #000000;
+  background-image: url("../images/background-filter.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.inner-header-title {
+  font-size: 60px;
+  line-height: 78px;
+}
+
+/*.main-inner {
+  color: #ffffff;
+  background-color: #000000;
+  background-image: url("../images/background-filter.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}*/
+
+.appartament-list {
+  background-color: #ffffff;
+}
+
+.appartament-list h3 {
+  color: #000000;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.appartament-list p {
+  color: #333333;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.button {
+  background-color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.subscription-catalog {
+  background-color: #ffffff;
+  text-align: center;
+  width: 1200px;
+  height: 415px;
+}
+
+.subscription-catalog h2 {
+  color: #000000;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.subscription-catalog p {
+  color: #333333;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.appartament-card {
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  padding: 20px;
+  text-align: center;
+}
+
+.appartament-card-button {
+  background: #756157;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 8px 50px;
+}
+
+.appartament-card-button-favorites {
+  background: #82b3d3;
+  border-radius: 4px;
+  padding: 8px 50px;
+}
+
+.appartament-card-image {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.appartament-card a {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.pagination {
+  background-color: #ffffff;
+  color: #ffffff;
+}
