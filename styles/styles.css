@@ -15,12 +15,16 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
   background-color: #ffffff;
+  margin: 0 auto;
 }
 
 .main-header {
@@ -37,6 +41,7 @@ body {
   font-weight: 700;
   text-align: center;
   text-decoration: none;
+  padding: 20px 16px 20px 16px;
 }
 
 .navigation-link-button {
@@ -54,9 +59,6 @@ body {
 .main-index {
   color: #000000;
   background-color: #ffffff;
-  background-image: url("../images/background-welcome-rocks.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
 }
 
 .description h3 {
@@ -81,14 +83,17 @@ body {
 
 .description-item-square {
   background: rgba(131, 179, 211, 0.12);
+  width: 400px;
 }
 
 .description-item-road {
   background: rgba(131, 179, 211, 0.2);
+  width: 400px;
 }
 
 .description-item-tourists {
   background: rgba(131, 179, 211, 0.12);
+  width: 400px;
 }
 
 .description-item-bridge {
@@ -97,14 +102,17 @@ body {
 
 .privilege-item-home {
   background: rgba(131, 179, 211, 0.12);
+  width: 400px;
 }
 
 .privilege-item-food {
   background: #ffffff;
+  width: 400px;
 }
 
 .privilege-item-souvenirs {
   background: rgba(131, 179, 211, 0.12);
+  width: 400px;
 }
 
 .search {
@@ -141,6 +149,10 @@ body {
 
 .hero {
   text-align: center;
+  background-image: url("../images/background-welcome-rocks.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  height: 485px;
 }
 
 .about {
@@ -198,7 +210,7 @@ body {
   line-height: 40px;
 }
 
-.main-inner-filter {
+.catalog-products {
   color: #ffffff;
   background-color: #756157;
   background-image: url("../images/background-filter.jpg");
@@ -213,6 +225,12 @@ body {
 
 .appartament-list {
   background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1060px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .appartament-list h3 {
@@ -227,15 +245,6 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-}
-
-.button {
-  background-color: #ffffff;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
 }
 
 .subscription-catalog {
@@ -266,14 +275,14 @@ body {
 }
 
 .appartament-card-button {
-  background: #756157;
+  background-color: #756157;
   color: #ffffff;
   border-radius: 4px;
   padding: 8px 50px;
 }
 
 .appartament-card-button-favorites {
-  background: #82b3d3;
+  background-color: #82b3d3;
   border-radius: 4px;
   padding: 8px 50px;
 }
@@ -284,15 +293,13 @@ body {
   margin-right: 20px;
 }
 
-.appartament-card a {
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  text-decoration: none;
-}
-
 .pagination {
   background: #ffffff;
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+  width: 1060px;
+  list-style: none;
 }
 
 .pagination-link {
@@ -300,15 +307,17 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 36px;
+  line-height: 60px;
   text-decoration: none;
-  padding-left: 1em;
   background: #82b3d3;
   border-radius: 4px;
   color: #ffffff;
-}
-
-.pagination-item {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  margin-bottom: 8px;
+  margin-right: 8px;
 }
 
 .subscription-button {
@@ -347,8 +356,99 @@ body {
   padding: 8px 50px;
   text-decoration: none;
   border: none;
+  text-align: center;
 }
 
 .button-filter {
-  background: #82b3d3;
+  background-color: #82b3d3;
+  width: 191px;
+  height: 36px;
+}
+
+.button-filter-reset {
+  background-color: transparent;
+  width: 191px;
+  height: 36px;
+}
+
+html {
+  height: 100%;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.page-container {
+  margin: 0 auto;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  display: flex;
+  width: 600px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation-user {
+  width: 400px;
+}
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.description-item {
+  width: 400px;
+}
+
+.description-list {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.privilege-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  list-style: none;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0;
+  width: 1060px;
+}
+
+.breadcrumbs {
+  display: flex;
+  flex-direction: row;
+}
+
+.catalog-filter {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-inner {
+  width: 1200px;
+  margin: 0 auto;
 }
