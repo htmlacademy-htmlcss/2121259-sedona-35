@@ -24,6 +24,7 @@ body {
   line-height: 21px;
   color: #333333;
   background-color: #ffffff;
+  width: 1200px;
   margin: 0 auto;
 }
 
@@ -33,6 +34,7 @@ body {
 }
 
 .navigation-link {
+  display: block;
   font-family: "PT Sans", sans-serif;
   line-height: 24px;
   font-size: 20px;
@@ -41,7 +43,7 @@ body {
   font-weight: 700;
   text-align: center;
   text-decoration: none;
-  padding: 20px 16px 20px 16px;
+  padding: 20px 16px;
 }
 
 .navigation-link-button {
@@ -54,6 +56,9 @@ body {
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
+  display: block;
+  margin-top: 14px;
+  margin-left: 20px;
 }
 
 .main-index {
@@ -65,11 +70,13 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  margin: 92px 112px 62px 112px;
 }
 
 .description p {
   font-size: 18px;
   line-height: 21px;
+  margin: 62px 85px 111px 85px;
 }
 
 .description-item {
@@ -118,7 +125,6 @@ body {
 .search {
   text-align: center;
   width: 1200px;
-  height: 406px;
 }
 
 .search h2 {
@@ -127,6 +133,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 96px 452px 20px 452px;
 }
 
 .search p {
@@ -134,9 +141,11 @@ body {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
+  margin: 20px 304px 54px 304px;
 }
 
 .search-catalog {
+  display: block;
   color: #ffffff;
   background-color: #756157;
   font-size: 20px;
@@ -145,6 +154,8 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   padding: 8px 50px;
+  border-radius: 4px;
+  margin: 54px 412px 96px 412px;
 }
 
 .hero {
@@ -165,12 +176,14 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 69px 290px 25px 290px;
 }
 
 .about p {
   color: #333333;
   font-size: 22px;
   line-height: 26px;
+  margin: 25px 274px 90px 275px;
 }
 
 .subscription {
@@ -179,18 +192,30 @@ body {
   background-image: url("../images/background-subscribe.jpg");
   text-align: center;
   background-size: 100% auto;
-  padding: 96px 258px 104px;
+}
+
+.subscription-form {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  margin-left: 258px;
+  padding-bottom: 104px;
 }
 
 .subscription h2 {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 0;
+  padding-top: 96px;
+  margin-bottom: 20px;
 }
 
 .subscription p {
   font-size: 22px;
   line-height: 26px;
+  margin: 0;
+  margin-bottom: 54px;
 }
 
 .main-footer a {
@@ -221,23 +246,21 @@ body {
 .inner-header-title {
   font-size: 60px;
   line-height: 78px;
+  margin: 0;
+  padding-left: 70px;
+  padding-top: 35px;
 }
 
 .appartament-list {
   background-color: #ffffff;
   display: flex;
+  justify-content: flex-start;
   flex-wrap: wrap;
   width: 1060px;
   padding: 0;
-  margin: 0;
+  padding-bottom: 80px;
+  margin: 0 auto;
   list-style: none;
-}
-
-.appartament-list h3 {
-  color: #000000;
-  font-size: 24px;
-  line-height: 28px;
-  font-weight: 700;
 }
 
 .appartament-list p {
@@ -270,8 +293,11 @@ body {
 .appartament-card {
   border: 1px solid #e6e6e6;
   border-radius: 4px;
-  padding: 20px;
+  padding: 0;
+  margin-right: 15px;
+  margin-bottom: 15px;
   text-align: center;
+  width: 340px;
 }
 
 .appartament-card-button {
@@ -279,6 +305,11 @@ body {
   color: #ffffff;
   border-radius: 4px;
   padding: 8px 50px;
+  width: 140px;
+}
+
+.appartament-card:nth-child(3n) {
+  margin-right: 0;
 }
 
 .appartament-card-button-favorites {
@@ -379,32 +410,22 @@ html {
   flex-grow: 1;
 }
 
-.page-container {
-  margin: 0 auto;
-}
-
 .navigation {
   display: flex;
   justify-content: space-between;
-  width: 1060px;
-  margin: 0 auto;
 }
 
 .navigation-list {
   display: flex;
-  width: 600px;
+  flex-wrap: wrap;
   margin: 0;
+  margin-left: 70px;
   padding: 0;
   list-style: none;
 }
 
 .navigation-user {
-  width: 400px;
-}
-
-.page-container {
-  width: 1200px;
-  margin: 0 auto;
+  margin-right: 70px;
 }
 
 .description-item {
@@ -436,19 +457,148 @@ html {
   margin: 0 auto;
   padding: 0;
   width: 1060px;
+  margin-top: 40px;
 }
 
 .breadcrumbs {
   display: flex;
-  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-left: 70px;
+  margin-bottom: 40px;
+}
+
+.breadcrumbs-item {
+  width: 150px;
 }
 
 .catalog-filter {
   display: flex;
-  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  margin-left: 70px;
 }
 
 .main-inner {
   width: 1200px;
   margin: 0 auto;
+}
+
+.description-item-сity {
+  color: #ffffff;
+}
+
+.catalog-filter-group {
+  width: 150px;
+  margin: 0;
+  padding: 0;
+  margin-right: 70px;
+  padding-top: 40p;
+  padding-top: 56px;
+  margin-bottom: 70px;
+}
+
+.catalog-filter-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li img {
+  display: block;
+}
+
+.hero img {
+  margin-top: 51px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.footer-social-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.footer-social-item {
+  width: 50px;
+  height: 50px;
+}
+
+.wrapper-button {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper-select {
+  display: flex;
+  margin: 50px 70px 40px 70px;
+}
+
+.select-control {
+  width: 292px;
+  height: 49px;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+  margin-right: 70px;
+}
+
+.button-select {
+  width: 48px;
+  height: 48px;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+}
+
+.button-select:not(:last-child) {
+  margin-right: 8px;
+}
+
+.button {
+  display: block;
+}
+
+.appartament-card-link {
+  text-decoration: none;
+}
+
+.appartament-card-title {
+  margin: 0;
+  color: #000000;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.wrapper-price {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 16px;
+}
+
+.appartament-card-apartments {
+  margin: 0;
+  padding: 0;
+}
+
+.appartament-card-price {
+  margin: 0;
+  padding: 0;
 }

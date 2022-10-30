@@ -50,18 +50,18 @@
     </header>
     <main class="main-container main-inner">
       <section class="main-inner-filter">
-        <h1 class="inner-header-title">Гостиницы Седоны</h1>
-        <ul class="breadcrumbs">
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html"
-              ><span class="visually-hidden">Главная</span></a
-            >
-          </li>
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Каталог</a>
-          </li>
-        </ul>
         <section class="catalog-products">
+          <h1 class="inner-header-title">Гостиницы Седоны</h1>
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="index.html"
+                ><span class="visually-hidden">Главная</span></a
+              >
+            </li>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link">Гостиницы</a>
+            </li>
+          </ul>
           <h2 class="visually-hidden">Поиск гостиниц с фильтрами</h2>
           <form
             class="catalog-filter"
@@ -141,28 +141,32 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="button-filter button" type="submit">
-              Применить
-            </button>
-            <button class="button-filter-reset button" type="reset">
-              Сбросить
-            </button>
+            <div class="wrapper-button">
+              <button class="button-filter button" type="submit">
+                Применить
+              </button>
+              <button class="button-filter-reset button" type="reset">
+                Сбросить
+              </button>
+            </div>
           </form>
         </section>
-        <select class="select-control" aria-label="Сортировка">
-          <option value="cheap">Сначала дешевые</option>
-          <option value="expensive">Сначала дорогие</option>
-          <option value="popular">Сначала популярные</option>
-        </select>
-        <a href="#" class="button"
-          ><span class="visually-hidden">Показать карточки</span></a
-        >
-        <a href="#" class="button button-cards"
-          ><span class="visually-hidden">Показать крупные значки</span></a
-        >
-        <a href="#" class="button button-list"
-          ><span class="visually-hidden">Показать список</span></a
-        >
+        <div class="wrapper-select">
+          <select class="select-control" aria-label="Сортировка">
+            <option value="cheap">Сначала дешевые</option>
+            <option value="expensive">Сначала дорогие</option>
+            <option value="popular">Сначала популярные</option>
+          </select>
+          <a href="#" class="button-select"
+            ><span class="visually-hidden">Показать карточки</span></a
+          >
+          <a href="#" class="button-select button-cards"
+            ><span class="visually-hidden">Показать крупные значки</span></a
+          >
+          <a href="#" class="button-select button-list"
+            ><span class="visually-hidden">Показать список</span></a
+          >
+        </div>
         <ul class="appartament-list">
           <li class="appartament-card">
             <a class="appartament-card-link" href="#">
@@ -175,8 +179,10 @@
               />
               <h3 class="appartament-card-title">Amara Resort & Spa</h3>
             </a>
-            <p class="appartament-card-apartments">Гостиница</p>
-            <p class="appartament-card-price">от 4000 ₽</p>
+            <div class="wrapper-price">
+              <p class="appartament-card-apartments">Гостиница</p>
+              <p class="appartament-card-price">от 4000 ₽</p>
+            </div>
             <a class="appartament-card-button button" href="#">Подробнее</a>
             <a class="appartament-card-button-favorites button">В избранное</a>
           </li>
@@ -191,8 +197,10 @@
               />
               <h3 class="appartament-card-title">Villas at Poco Diablo</h3>
             </a>
-            <p class="appartament-card-apartments">Гостиница</p>
-            <p class="appartament-card-price">от 5000 ₽</p>
+            <div class="wrapper-price">
+              <p class="appartament-card-apartments">Гостиница</p>
+              <p class="appartament-card-price">от 5000 ₽</p>
+            </div>
             <a class="appartament-card-button button" href="#">Подробнее</a>
             <a class="appartament-card-button-favorites button">
               В избранное
@@ -209,8 +217,10 @@
               />
               <h3 class="appartament-card-title">Desert Quail Inn</h3>
             </a>
-            <p class="appartament-card-apartments">Гостиница</p>
-            <p class="appartament-card-price">от 2500 ₽</p>
+            <div class="wrapper-price">
+              <p class="appartament-card-apartments">Гостиница</p>
+              <p class="appartament-card-price">от 2500 ₽</p>
+            </div>
             <a class="appartament-card-button button" href="#">Подробнее</a>
             <a class="appartament-card-button-favorites button">
               В избранное
@@ -227,8 +237,10 @@
               />
               <h3 class="appartament-card-title">GreenTree Inn</h3>
             </a>
-            <p class="appartament-card-apartments">Гостиница</p>
-            <p class="appartament-card-price">от 1500 ₽</p>
+            <div class="wrapper-price">
+              <p class="appartament-card-apartments">Гостиница</p>
+              <p class="appartament-card-price">от 1500 ₽</p>
+            </div>
             <a class="appartament-card-button button" href="#">Подробнее</a>
             <a class="appartament-card-button-favorites button">
               В избранное
