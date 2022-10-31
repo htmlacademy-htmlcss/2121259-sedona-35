@@ -282,12 +282,18 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
 }
 
 .subscription-catalog p {
   color: #333333;
   font-size: 22px;
   line-height: 26px;
+  margin: 0;
+  margin-bottom: 54px;
+  padding: 0;
 }
 
 .appartament-card {
@@ -305,7 +311,7 @@ body {
   color: #ffffff;
   border-radius: 4px;
   padding: 8px 50px;
-  width: 140px;
+  width: 50px;
 }
 
 .appartament-card:nth-child(3n) {
@@ -316,6 +322,7 @@ body {
   background-color: #82b3d3;
   border-radius: 4px;
   padding: 8px 50px;
+  width: 50px;
 }
 
 .appartament-card-image {
@@ -327,9 +334,9 @@ body {
 .pagination {
   background: #ffffff;
   display: flex;
-  flex-direction: row;
   padding: 0px;
-  width: 1060px;
+  margin: 0;
+  margin-left: 70px;
   list-style: none;
 }
 
@@ -388,6 +395,7 @@ body {
   text-decoration: none;
   border: none;
   text-align: center;
+  display: inline-block;
 }
 
 .button-filter {
@@ -529,6 +537,7 @@ li img {
   padding: 0;
   margin: 0;
   list-style: none;
+  width: 350px;
 }
 
 .footer-social-item {
@@ -565,10 +574,6 @@ li img {
   margin-right: 8px;
 }
 
-.button {
-  display: block;
-}
-
 .appartament-card-link {
   text-decoration: none;
 }
@@ -601,4 +606,8 @@ li img {
 .appartament-card-price {
   margin: 0;
   padding: 0;
+}
+
+.subscription-catalog-container {
+  padding-top: 96px;
 }
