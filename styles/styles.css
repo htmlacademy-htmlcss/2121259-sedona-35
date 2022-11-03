@@ -192,14 +192,10 @@ body {
   background-image: url("../images/background-subscribe.jpg");
   text-align: center;
   background-size: 100% auto;
+  padding: 96px 258px 104px 258px;
 }
 
 .subscription-form {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  margin-left: 258px;
-  padding-bottom: 104px;
 }
 
 .subscription h2 {
@@ -207,7 +203,6 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   margin: 0;
-  padding-top: 96px;
   margin-bottom: 20px;
 }
 
@@ -241,25 +236,26 @@ body {
   background-image: url("../images/background-filter.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
+  padding-left: 70px;
+  padding-top: 35px;
+  padding-bottom: 70px;
 }
 
 .inner-header-title {
   font-size: 60px;
   line-height: 78px;
   margin: 0;
-  padding-left: 70px;
-  padding-top: 35px;
 }
 
 .appartament-list {
   background-color: #ffffff;
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 340px 340px 340px;
+  gap: 20px 20px;
   width: 1060px;
   padding: 0;
-  padding-bottom: 80px;
   margin: 0 auto;
+  margin-bottom: 80px;
   list-style: none;
 }
 
@@ -300,43 +296,31 @@ body {
   border: 1px solid #e6e6e6;
   border-radius: 4px;
   padding: 0;
-  margin-right: 15px;
-  margin-bottom: 15px;
   text-align: center;
-  width: 340px;
 }
 
 .appartament-card-button {
   background-color: #756157;
   color: #ffffff;
   border-radius: 4px;
-  padding: 8px 50px;
-  width: 50px;
-}
-
-.appartament-card:nth-child(3n) {
-  margin-right: 0;
 }
 
 .appartament-card-button-favorites {
   background-color: #82b3d3;
   border-radius: 4px;
-  padding: 8px 50px;
-  width: 50px;
 }
 
 .appartament-card-image {
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
+  display: block;
+  padding: 20px;
+  padding-bottom: 16px;
 }
 
 .pagination {
   background: #ffffff;
   display: flex;
-  padding: 0px;
+  padding: 0;
   margin: 0;
-  margin-left: 70px;
   list-style: none;
 }
 
@@ -391,11 +375,10 @@ body {
   text-transform: uppercase;
   font-size: 16px;
   line-height: 20px;
-  padding: 8px 50px;
+  padding: 8px 30px;
   text-decoration: none;
   border: none;
   text-align: center;
-  display: inline-block;
 }
 
 .button-filter {
@@ -473,8 +456,8 @@ html {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  margin-left: 70px;
   margin-bottom: 40px;
+  margin-top: 8px;
 }
 
 .breadcrumbs-item {
@@ -485,7 +468,6 @@ html {
   display: flex;
   margin: 0;
   padding: 0;
-  margin-left: 70px;
 }
 
 .main-inner {
@@ -504,17 +486,12 @@ html {
   margin-right: 70px;
   padding-top: 40p;
   padding-top: 56px;
-  margin-bottom: 70px;
 }
 
 .catalog-filter-list {
   list-style: none;
   padding: 0;
   margin: 0;
-}
-
-li img {
-  display: block;
 }
 
 .hero img {
@@ -552,7 +529,7 @@ li img {
 
 .wrapper-select {
   display: flex;
-  margin: 50px 70px 40px 70px;
+  margin-bottom: 40px;
 }
 
 .select-control {
@@ -584,7 +561,6 @@ li img {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
-  margin-top: 16px;
   margin-bottom: 16px;
 }
 
@@ -610,4 +586,26 @@ li img {
 
 .subscription-catalog-container {
   padding-top: 96px;
+}
+
+.footer-link {
+  width: 350px;
+}
+
+.main-header-logo {
+  width: 140px;
+  height: 61px;
+  display: inline-block;
+}
+
+.logo {
+  position: absolute;
+}
+
+.description-images {
+  display: block;
+}
+
+.wrapper-iner-list {
+  padding: 50px 70px 60px 70px;
 }
