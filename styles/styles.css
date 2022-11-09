@@ -57,7 +57,6 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   display: block;
-  margin-top: 14px;
   margin-left: 20px;
 }
 
@@ -70,13 +69,15 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
-  margin: 92px 112px 62px 112px;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .description p {
   font-size: 18px;
   line-height: 21px;
-  margin: 62px 85px 111px 85px;
+  margin: 0;
+  order: 3;
 }
 
 .description-item {
@@ -351,6 +352,7 @@ body {
   color: #ffffff;
   padding: 8px 50px;
   border: none;
+  border-radius: 0px 4px 4px 0px;
 }
 
 .field {
@@ -363,9 +365,11 @@ body {
   background: #f2f2f2;
   width: 452px;
   height: 52px;
+  border: none;
 }
 
 .button {
+  position: relative;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -376,19 +380,28 @@ body {
   padding: 8px 20px;
   text-decoration: none;
   border: none;
-  display: inline-block;
+}
+
+.privilege-item {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 85px;
+  padding-right: 85px;
 }
 
 .button-filter {
   background-color: #82b3d3;
   width: 191px;
   height: 36px;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .button-filter-reset {
   background-color: transparent;
   width: 191px;
   height: 36px;
+  cursor: pointer;
 }
 
 html {
@@ -411,6 +424,7 @@ html {
   margin-left: 70px;
   padding: 0;
   list-style: none;
+  align-items: center;
 }
 
 .navigation-user {
@@ -447,6 +461,7 @@ html {
   padding: 0;
   width: 1060px;
   margin-top: 40px;
+  margin-bottom: 30px;
 }
 
 .breadcrumbs {
@@ -540,6 +555,7 @@ html {
 }
 
 .button-select {
+  position: relative;
   width: 48px;
   height: 48px;
   border: 2px solid #e5e5e5;
@@ -609,55 +625,222 @@ html {
   padding: 50px 70px 60px 70px;
 }
 
-/*.navigation-user .navigation-item:nth-child(1) .navigation-link {
-  background-image: url("../images/search.svg");
-  background-repeat: no-repeat;
-  background-position: bottom;
-}
-
-.navigation-user .navigation-item:nth-child(2) .navigation-link {
-  background-image: url("../images/icon-heart.svg");
-  background-repeat: no-repeat;
-  background-position: bottom;
-}
-
-.navigation-user .navigation-item:nth-child(1) {
-  width: 44px;
-  height: 64px;
-}
-
-.navigation-user .navigation-item:nth-child(2) {
-  width: 44px;
-  height: 64px;
-}
-
-.home {
-  background-image: url("../images/advantages-house.svg");
-  background-repeat: no-repeat;
-  background-position: top;
-}
-
-.navigation-link-user {
-  display: block;
-  height: 64px;
-  background-color: #ffffff;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 20px 20px;
-}*/
-
 .navigation-link-search {
   background-image: url("../images/search.svg");
-  background-color: #ffffff;
-  background-repeat: no-repeat;
-  background-position: bottom;
   background-size: 20px 20px;
 }
 
 .navigation-link-like {
   background-image: url("../images/icon-heart.svg");
+  background-size: 18px 17px;
+}
+
+.footer-icon {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.navigation-item-link {
+  display: block;
+  padding: 35px 12px;
   background-color: #ffffff;
   background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: 20px 20px;
+  background-position: center;
+}
+
+.label-email {
+  display: flex;
+  justify-content: center;
+}
+
+.navigation-item-icon {
+  width: 44px;
+  height: 64px;
+}
+
+.advantages-image {
+  margin-bottom: 30px;
+}
+
+/*
+.description-item-light {
+  padding-top: 103px;
+  padding-left: 85px;
+  padding-right: 85px;
+  padding-bottom: 121px;
+}*/
+
+.select-button-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+.button-select:hover {
+  border: 2px solid #000000;
+}
+
+.button-select:focus {
+  border: 2px solid #68a2ca;
+}
+
+.button-select:active {
+  border: 2px solid #000000;
+}
+
+.footer-contacts-address-phone:hover {
+  color: #756157;
+}
+
+.footer-contacts-address-phone:focus {
+  color: #756157;
+}
+
+.footer-contacts-address-phone:active {
+  text-shadow: #756157;
+}
+
+.navigation-link-button:hover {
+  background: #615048;
+  border-radius: 4px;
+}
+
+.navigation-link-button:focus {
+  background: #615048;
+  border-radius: 4px;
+}
+
+.navigation-link-button:active {
+  background: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.search-catalog:hover {
+  background: #615048;
+  border-radius: 4px;
+}
+
+.search-catalog:focus {
+  background: #615048;
+  border-radius: 4px;
+}
+
+.search-catalog:active {
+  background: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.subscription-button:hover {
+  background: #68a2ca;
+  border-radius: 4px;
+}
+
+.subscription-button:focus {
+  background: #68a2ca;
+  border-radius: 4px;
+}
+
+.subscription-button:active {
+  background: #82b3d3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-icon:hover {
+  background-color: #68a2ca;
+}
+
+.navigation-link:hover {
+  border-bottom: 4px solid #756257;
+}
+
+.appartament-card-button:hover {
+  background: #615048;
+}
+
+.appartament-card-button:focus {
+  background: #615048;
+}
+
+.appartament-card-button:active {
+  background: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.appartament-card-button-favorites:hover {
+  background: #68a2ca;
+}
+
+.appartament-card-button-favorites:focus {
+  background: #68a2ca;
+}
+
+.appartament-card-button-favorites:active {
+  background: #82b3d3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-filter:hover {
+  background: #68a2ca;
+}
+
+.button-filter:focus {
+  background: #68a2ca;
+}
+
+.button-filter:active {
+  background: #82b3d3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-filter-reset:hover {
+  opacity: 0.6;
+  color: #ffffff;
+}
+
+.button-filter-reset:focus {
+  border: 3px solid #83b3d3;
+  border-radius: 4px;
+}
+
+.button-filter-reset:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.wrapper-blue-description {
+  display: grid;
+  padding-top: 92px;
+  padding-right: 85px;
+  padding-bottom: 111px;
+  padding-left: 85px;
+}
+
+.wrapper-light-description {
+  display: grid;
+  padding-top: 103px;
+  padding-right: 85px;
+  padding-bottom: 121px;
+  padding-left: 85px;
+}
+
+.wrapper-light-description::before {
+  order: 2;
+  margin-right: 85px;
+  margin-left: 85px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  content: "";
+}
+
+.wrapper-blue-description::before {
+  order: 2;
+  margin-right: 85px;
+  margin-left: 85px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  content: "";
 }
