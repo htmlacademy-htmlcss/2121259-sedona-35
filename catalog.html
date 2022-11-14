@@ -40,8 +40,9 @@
           </li>
           <li class="navigation-item-icon">
             <a class="navigation-item-link navigation-link-like" href="#"
-              ><span class="visually-hidden">Лайк</span></a
-            >
+              ><span class="visually-hidden">Лайк</span>
+              <span class="number-green">12</span>
+            </a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link-button" href="#">Хочу сюда!</a>
@@ -98,32 +99,35 @@
               <legend class="catalog-filter-title">Инфраструктура:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
-                  <lavel name="control">
+                  <label class="control">
                     <input
                       type="checkbox"
                       class="control-input"
                       name="swimming-pool"
                       checked
                     />
-                    Бассейн
-                  </lavel>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Бассейн</span>
+                  </label>
                 </li>
                 <li class="catalog-filter-item">
-                  <lavel name="control">
+                  <label class="control">
                     <input
                       type="checkbox"
                       class="control-input"
                       name="parking"
                       checked
                     />
-                    Парковка
-                  </lavel>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Парковка</span>
+                  </label>
                 </li>
                 <li class="catalog-filter-item">
-                  <lavel name="control">
+                  <label class="control">
                     <input type="checkbox" class="control-input" name="Wi-Fi" />
-                    Wi-Fi
-                  </lavel>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Wi-Fi</span>
+                  </label>
                 </li>
               </ul>
             </fieldset>
@@ -132,7 +136,7 @@
               <legend class="catalog-filter-title">Тип жилья:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
-                  <lavel name="control">
+                  <label class="control">
                     <input
                       type="radio"
                       class="control-input"
@@ -140,32 +144,70 @@
                       value="hotel"
                       checked
                     />
-                    Гостиница
-                  </lavel>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Гостиница</span>
+                  </label>
                 </li>
                 <li class="catalog-filter-item">
-                  <lavel name="control">
+                  <label class="control">
                     <input
                       type="radio"
                       class="control-input"
                       name="housing"
                       value="motel"
                     />
-                    Мотель
-                  </lavel>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Мотель</span>
+                  </label>
                 </li>
                 <li class="catalog-filter-item">
-                  <lavel name="control">
+                  <label class="control">
                     <input
                       type="radio"
                       class="control-input"
                       name="housing"
                       value="apartments"
                     />
-                    Апартаменты
-                  </lavel>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Апартаменты</span>
+                  </label>
                 </li>
               </ul>
+            </fieldset>
+            <fieldset class="catalog-filter-group catalog-filter-group-margin">
+              <legend class="catalog-filter-title">Стоимость, &#8381;</legend>
+              <div class="range">
+                <div class="range-wrapper-inputs">
+                  <label class="catalog-filter-label">
+                    <input
+                      class="range-input"
+                      type="number"
+                      value="0"
+                      name="min-peice"
+                    />
+                  </label>
+                  <label class="catalog-filter-label">
+                    <input
+                      class="range-input range-input-transform"
+                      type="number"
+                      value="9000"
+                      name="max-peice"
+                    />
+                  </label>
+                </div>
+                <div class="range-scale">
+                  <div class="range-bar" style="left: 0px; width: 200px">
+                    <button
+                      type="button"
+                      class="range-toggle toggle-min"
+                    ></button>
+                    <button
+                      type="button"
+                      class="range-toggle toggle-max"
+                    ></button>
+                  </div>
+                </div>
+              </div>
             </fieldset>
             <div class="wrapper-button">
               <button class="button-filter button" type="submit">
