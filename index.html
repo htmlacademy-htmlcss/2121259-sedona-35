@@ -289,5 +289,70 @@
         </div>
       </section>
     </footer>
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-auth">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form
+            class="auth-form"
+            action="https://echo.htmlacademy.ru/"
+            method="post"
+          >
+            <p class="field-group">
+              <label class="date" for="auth-start">Дата Заезда:</label>
+              <input
+                class="auth-form-field field"
+                type="date"
+                id="auth-start"
+                name="auth-start"
+                value="27.04.2020"
+                min="01.01.2021"
+                max="01.01.2031"
+              />
+            </p>
+            <p class="field-group">
+              <label class="date" for="auth-departure">Дата Выезда:</label>
+              <input
+                class="auth-form-field field"
+                type="date"
+                id="auth-departure"
+                name="auth-departure"
+                value="01.09.2021"
+                min="01.01.2021"
+                max="01.01.2031"
+              />
+            </p>
+            <p class="quantity-number">
+              <label class="number-grown" for="auth-grown">Взрослые:</label>
+              <button class="button-minus">-</button>
+              <input
+                class="quantity"
+                type="text"
+                id="auth-grown"
+                name="auth-grown"
+                value="1"
+                data-max-count="5"
+              />
+              <button class="button-plus">+</button>
+              <label class="number-children" for="auth-children">Дети:</label>
+              <button class="button-minus">-</button>
+              <input
+                class="quantity"
+                type="text"
+                id="auth-children"
+                name="auth-children"
+                value="1"
+                data-max-count="5"
+              />
+              <button class="button-plus">+</button>
+            </p>
+            <button class="auth-form-button" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
