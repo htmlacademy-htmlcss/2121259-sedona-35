@@ -1239,9 +1239,8 @@ html {
   opacity: 0.6;
 }
 
-.control:focus .control-mark {
-  border: 3px solid #83b3d3;
-  border-radius: 4px;
+input:focus + span {
+  outline: 3px solid #83b3d3;
 }
 
 .control:active .control-mark {
@@ -1355,7 +1354,7 @@ html {
 }
 
 .modal-container-close {
-  disply: none;
+  display: none;
 }
 
 .quantity-number {
@@ -1403,7 +1402,7 @@ html {
   display: flex;
   margin: 0;
   padding: 0;
-  margin-bottom: 48px;
+  margin-bottom: 4px;
   width: 577px;
   height: 48px;
 }
@@ -1440,9 +1439,6 @@ html {
   width: 40px;
   height: 48px;
   border: none;
-  background-image: url("../images/button-minus.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   cursor: pointer;
 }
 
@@ -1541,15 +1537,27 @@ html {
   fill-opacity: 10;
 }
 
-.button-plus:focus .button-plus-color {
-  fill: #000000;
-  fill-opacity: 10;
-  border: 3px solid #82b3d3;
+.button-plus-color:focus {
+  outline: 3px solid #82b3d3;
   border-radius: 4px;
 }
 
 .button-plus:active .button-plus-color {
   fill-opacity: 0.3;
+}
+
+.button-minus:hover .icon-button-minus {
+  fill: #000000;
+  fill-opacity: 10;
+}
+
+.button-minus:active .icon-button-minus {
+  fill-opacity: 0.3;
+}
+
+.close-button-images {
+  display: block;
+  margin: 0 auto;
 }
 
 .icon-calendar {
@@ -1558,6 +1566,13 @@ html {
   left: 30;
   top: 16px;
   opacity: 0.3;
+}
+
+.button-plus-color {
+  width: 15px;
+  height: 15px;
+  display: block;
+  margin: 0 auto;
 }
 
 .tooltip-toggle {
@@ -1627,4 +1642,47 @@ html {
   right: 0;
   margin-left: auto;
   margin-right: auto;
+}
+
+.auth-form-button:hover {
+  background: #68a2ca;
+}
+
+.auth-form-button:focus {
+  background: #68a2ca;
+}
+
+.auth-form-button:active {
+  color: #8ab2cc;
+}
+
+.error-text {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ff5757;
+  margin-left: 157px;
+  margin-bottom: 23px;
+}
+
+.error-text-input {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  margin-left: 157px;
+  color: #333333;
+  margin-bottom: 23px;
+}
+
+.icon-button-minus {
+  display: block;
+  margin: 0 auto;
 }
