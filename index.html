@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="icon" href="favicon.ico" />
   </head>
 
   <body>
@@ -21,7 +22,7 @@
               />
             </a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item navigation-main">
             <a class="navigation-link navigation-link-current" href="index.html"
               >Главная</a
             >
@@ -41,7 +42,9 @@
           </li>
           <li class="navigation-item-icon">
             <a class="navigation-item-link navigation-link-like" href="#"
-              ><span class="visually-hidden">Лайк</span>
+              ><span class="visually-hidden"
+                >Отелей, добавленных в избранное: 12.</span
+              >
               <span class="number-green">12</span>
             </a>
           </li>
@@ -55,16 +58,16 @@
       <section class="hero">
         <img
           src="images/welcome.svg"
-          width="458px"
-          height="352px"
+          width="458"
+          height="352"
           alt="welcome to the gorgeous Sedona because the grand canyon sucks"
         />
       </section>
       <section class="about">
-        <h2>
+        <h1>
           Седона — небольшой городок в Аризоне,<br />
           заслуживающий большего!
-        </h2>
+        </h1>
         <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       </section>
       <section class="description">
@@ -126,39 +129,25 @@
         </ul>
         <ul class="privilege-list">
           <li class="privilege-item privilege-item-home">
-            <img
-              src="images/advantages-house.svg"
-              class="advantages-image"
-              width="75px"
-              height="72px"
-              alt="home"
-            />
             <h3>Жильё</h3>
-            <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            <p>
+              Рекомендуем пожить<br />в настоящем мотеле,<br />
+              всё как в кино!
+            </p>
           </li>
           <li class="privilege-item privilege-item-food">
-            <img
-              src="images/advantages-food.svg"
-              class="advantages-image"
-              width="74px"
-              height="70px"
-              alt="food"
-            />
             <h3>Еда</h3>
             <p>
-              Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
+              Всегда заказывайте<br />
+              топовый фирменный бургер, вы не разочаруетесь!
             </p>
           </li>
           <li class="privilege-item privilege-item-souvenirs">
-            <img
-              src="images/advantages-souvenirs.svg"
-              class="advantages-image"
-              width="64px"
-              height="76px"
-              alt="souvenirs"
-            />
             <h3>Сувениры</h3>
-            <p>Не только китайского, но и настоящего местного производства!</p>
+            <p>
+              Не только китайского,<br />
+              но и настоящего местного производства!
+            </p>
           </li>
         </ul>
       </section>
@@ -270,6 +259,7 @@
         </div>
         <div class="footer-link">
           <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+            <span class="visually-hidden">Логотип HTML академии.</span>
             <svg
               aria-hidden="true"
               focusable="false"
@@ -291,7 +281,7 @@
     </footer>
     <div class="modal-container modal-container-close">
       <div class="modal modal-auth">
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <img
             src="images/modal-close.svg"
             class="close-button-images"
@@ -440,6 +430,9 @@
                   <label class="number-children" for="auth-children"
                     >Дети:<span class="tooltip">
                       <button class="tooltip-toggle" type="button">
+                        <span class="visually-hidden"
+                          >Открытие всплывающего окна.</span
+                        >
                         <svg
                           class="tooltip-icon"
                           width="26"
