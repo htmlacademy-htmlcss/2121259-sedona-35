@@ -305,7 +305,7 @@ body {
   background-color: #ffffff;
   text-align: center;
   width: 1200px;
-  padding-top: 88px;
+  padding-top: 86px;
   padding-bottom: 49px;
   padding-left: 10px;
   padding-right: 10px;
@@ -398,8 +398,8 @@ body {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 36px;
+  font-size: 18px;
+  line-height: 24px;
   color: #000000;
   background: #f2f2f2;
   width: 452px;
@@ -525,7 +525,7 @@ html {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  margin-bottom: 44px;
+  margin-bottom: 42px;
   margin-top: 8px;
 }
 
@@ -591,7 +591,7 @@ html {
 .wrapper-button {
   display: flex;
   flex-direction: column;
-  padding-top: 50px;
+  padding-top: 53px;
 }
 
 .wrapper-select {
@@ -605,7 +605,7 @@ html {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  padding: 11px 15px;
+  padding: 11px 19px;
   width: 292px;
   height: 49px;
   border: 2px solid #e5e5e5;
@@ -1729,11 +1729,11 @@ input:focus + span {
   margin: 0 auto;
 }
 
-.hotel-stars-one {
-  width: 91px;
+.hotel-stars-five {
+  width: 111px;
 }
 
-.hotel-stars-two {
+.hotel-stars-four {
   width: 91px;
 }
 
@@ -1741,8 +1741,12 @@ input:focus + span {
   width: 68px;
 }
 
-.hotel-stars-four {
+.hotel-stars-two {
   width: 44px;
+}
+
+.hotel-stars-one {
+  width: 24px;
 }
 
 .privilege-item-home::before {
@@ -1843,4 +1847,38 @@ input:focus + span {
   font-size: 20px;
   line-height: 24px;
   color: #ffffff;
+}
+
+.expand-pagination {
+  text-decoration: none;
+    background-color: #ffffff;
+    border-radius: 4px;
+    border: none;
+    display: inline-block;
+    min-width: 60px;
+    height: 60px;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    padding: 0 5px;
+    background-image: url("../images/pagination-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 33px;
+}
+
+.expand-pagination:hover {
+  opacity: 0.3;
+}
+
+.expand-pagination:active {
+  opacity: 0.6;
+}
+
+.breadcrumbs-link-hostel {
+  font-family: 'PT Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+color: #FFFFFF;
+line-height: 21px;
 }
